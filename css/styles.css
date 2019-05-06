@@ -25,6 +25,7 @@ a:hover {
     text-decoration: none;
 }
 
+/* HEADER */
 .header-bg {
     background-color: #050921;
 }
@@ -71,11 +72,26 @@ a:hover {
 }
 
 /* MAIN SECTION */
-/* Our advantages */
+.advantages,
+.services {
+padding: 50px 0 70px 0;
+}
 
+.section-heading__title--txt-white {
+    color: #fff;
+}
+
+.bg-wood {
+    background-image: url(../img/main/bg-wood.png);
+    background-size: cover;
+}
+
+.services {
+    color: #fff;
+}
+
+/* Our advantages */
 .section-heading {
-    /* position: relative; */
-    padding-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -110,7 +126,7 @@ a:hover {
     text-align: center;
 }
 
-.advantages-box {
+.advantages-box:first-child {
     margin-bottom: 20px;
 }
 
@@ -128,12 +144,35 @@ a:hover {
     width: 90px;
 }
 
+/* Services */
+.services-title {
+    text-align: center;
+}
+
+.services-list,
+.services-text {
+    font-size: 18px;
+}
+
+.services-list__item::before {
+    content: '\2022';
+    padding-right: 5px;
+    font-size: 30px;
+    vertical-align: sub;
+    color: #ea8411;
+}
+
+.services-text {
+    text-align: center;
+    margin: 0;
+}
+
 @media screen and (min-width: 540px)  {
     .header-title-text {
         font-size: 36px;
     }
 
-    .advantages-box {
+    .advantages-box:first-child {
         margin-bottom: 30px;
     }
 }
@@ -161,8 +200,12 @@ a:hover {
         margin-right: 15px;
     }
 
-    .advantages-box {
+    .advantages-box:first-child {
         margin-bottom: 70px;
+    }
+
+    .services {
+        font-size: 18px;
     }
 }
 
