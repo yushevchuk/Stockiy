@@ -121,7 +121,6 @@ a:hover {
 }
    
 .advantages-box__icon {
-    margin-right: 30px;
     text-align: center;
 }
 
@@ -146,6 +145,10 @@ a:hover {
     
     .advantages-box__text {
         text-align: left;
+    }
+
+    .advantages-box__icon {
+        margin-right: 30px;
     }
 }
 
