@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GothamPro;
+    src: url('../fonts/GothamPro/GothamPro.woff') format('woff');
+}
+
+@font-face {
+    font-family: PhillippScript;
+    src: url('../fonts/PhillippScript/PhillippScript.ttf');
+}
+
+body {
+    font-family: "GothamPro", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header-bg {
+    background-color: #050921;
+}
+
+.navbar {
+    height: 75px;
+}
+
+.logo {
+    font-family: "PhillippScript";
+    font-size: 24px;
+}
+
+.navigation-item {
+    margin-left: 45px;
+    font-size: 18px;
+}
+
+.navigation-link,
+.logo {
+    color: #fff;
+}
+
+.navigation-link:hover,
+.navbar-dark .navbar-brand.logo:hover {
+    color: #ea8411;
+}
+
+.header-info {
+    height: 543px;
+    background: url(../img/header/header-bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.header-info .container,
+.header-title {
+    height: 100%;
+}
+
+.header-title-text {
+    font-family: "PhillippScript";
+    font-size: 23px;
+    color: #fff;
+}
+
+/* MAIN SECTION */
+/* Our advantages */
+
+.section-heading {
+    /* position: relative; */
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-heading__title {
+   position: relative;
+   display: inline-block;
+}
+
+.section-heading__title:before,
+.section-heading__title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;   
+    border-top: 1px solid;
+}
+
+.section-heading__title:before {
+   left: 0;
+   margin-left: 3px;
+   margin-top: -3px;
+}
+
+.section-heading__title:after {
+    right: 0;
+    margin-right: 3px;
+    margin-top: 6px;
+}
+
+.section-heading,
+.advantages-box__text {
+    text-align: center;
+}
+
+.advantages-box {
+    margin-bottom: 20px;
+}
+
+.advantages-box__text {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+   
+.advantages-box__icon {
+    margin-right: 30px;
+    text-align: center;
+}
+
+.icon-test {
+    width: 90px;
+}
+
+@media screen and (min-width: 540px)  {
+    .header-title-text {
+        font-size: 36px;
+    }
+
+    .advantages-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px)  {
+    .header-title-text {
+        font-size: 45px;
+    }
+    
+    .advantages-box__text {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-title-text {
+        font-size: 56px;
+    }
+
+    .advantages-box__icon {
+        margin-right: 15px;
+    }
+
+    .advantages-box {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-title-text {
+        font-size: 73px;
+    }
+}
+
+/* from bottom to top btn */
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+  }
+  
+  .back-to-top:hover {
+    background: #e9ebec;
+  }
+  
+  .back-to-top_show {
+    display: block;
+  }
