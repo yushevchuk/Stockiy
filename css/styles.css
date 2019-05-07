@@ -195,7 +195,7 @@ a:hover {
 
 .product-info__title::after {
     content: "";
-    position:absolute;
+    position: absolute;
     display: block;
     border-bottom: 1px solid #000;
     width: 30px;
