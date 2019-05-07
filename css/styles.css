@@ -73,8 +73,9 @@ a:hover {
 
 /* MAIN SECTION */
 .advantages,
-.services {
-padding: 50px 0 70px 0;
+.services,
+.products {
+    padding: 50px 0 70px 0;
 }
 
 .section-heading__title--txt-white {
@@ -165,6 +166,62 @@ padding: 50px 0 70px 0;
 .services-text {
     text-align: center;
     margin: 0;
+}
+
+/* Our products */
+.box-product {
+    padding: 2px 2px 0 2px;
+    background-color: #ea8411;
+}
+
+.box-product {
+    margin-bottom: 30px;
+}
+
+.box-product--margin {
+    margin: 0;
+}
+
+.product-info {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.product-info__title {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-info__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #000;
+    width: 30px;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+}
+
+.product-info__text {
+    margin: 0;
+}
+
+.box-product:hover {
+    padding: 25px 25px 0 25px;  
+}
+
+.box-product:hover .product-info{
+    color: #fff;
+}
+
+.box-product:hover .product-info__text {
+    font-weight: bold;
+}
+
+.box-product:hover .product-info__title::after {
+    border-color: #fff;
 }
 
 @media screen and (min-width: 540px)  {
