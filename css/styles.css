@@ -21,8 +21,13 @@ ul {
     list-style-type: none;
 }
 
+a {
+    color: #fff;
+}
+
 a:hover {
     text-decoration: none;
+    color: #ea8411;
 }
 
 /* HEADER */
@@ -49,7 +54,6 @@ a:hover {
     color: #fff;
 }
 
-.navigation-link:hover,
 .navbar-dark .navbar-brand.logo:hover {
     color: #ea8411;
 }
@@ -74,7 +78,8 @@ a:hover {
 /* MAIN SECTION */
 .advantages,
 .services,
-.products {
+.products,
+.contacts {
     padding: 50px 0 70px 0;
 }
 
@@ -224,6 +229,33 @@ a:hover {
     border-color: #fff;
 }
 
+/* Contacts */
+.contacts-info {
+    color: #fff;
+}
+
+.contacts-info__title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contacts-info__address,
+.contacts-info__tel,
+.contacts-info__mail {
+    margin-bottom: 20px;
+}
+
+.box-contact-icon {
+    width: 25px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.contact-icon {
+    vertical-align: sub;
+}
+
 @media screen and (min-width: 540px)  {
     .header-title-text {
         font-size: 36px;
@@ -263,6 +295,18 @@ a:hover {
 
     .services {
         font-size: 18px;
+    }
+
+    .contacts-info__title {
+        text-align: left;
+    }
+
+    .contacts-info {
+        font-size: 18px;
+    }
+
+    .contacts-info__title {
+        font-size: 25px;
     }
 }
 
