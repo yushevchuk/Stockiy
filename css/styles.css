@@ -160,11 +160,15 @@ a:hover {
     font-size: 18px;
 }
 
+.services-list__item {
+    display: flex;
+    align-items: center;
+}
+
 .services-list__item::before {
     content: '\2022';
     padding-right: 5px;
     font-size: 30px;
-    vertical-align: sub;
     color: #ea8411;
 }
 
