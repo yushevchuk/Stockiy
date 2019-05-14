@@ -79,7 +79,8 @@ a:hover {
 .advantages,
 .services,
 .products,
-.contacts {
+.contacts,
+.contact-us {
     padding: 50px 0 70px 0;
 }
 
@@ -260,6 +261,46 @@ a:hover {
     vertical-align: sub;
 }
 
+/* Contact us */
+.contact-form__item {
+    width: 200px;
+}
+
+.contact-form__message {
+    width: 100%;
+    max-height: 70px;
+    min-height: 70px;
+}
+
+.contact-form__item,
+.contact-form__message {
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ea8411;
+}
+
+.contact-form__item::placeholder,
+.contact-form__message::placeholder {
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+
+.form-btn {
+    width: 200px;
+    padding: 10px 0;
+    border: 1px solid #ea8411;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #ea8411;
+    font-weight: bold;
+}
+
+.form-btn:hover {
+    background-color: #fceddc;
+}
+
 @media screen and (min-width: 540px)  {
     .header-title-text {
         font-size: 36px;
@@ -281,6 +322,19 @@ a:hover {
 
     .advantages-box__icon {
         margin-right: 30px;
+    }
+
+    .contact-form__message {
+        width: 290px;
+    }
+
+    .contact-form__item,
+    .contact-form__message {
+        margin-bottom: 40px;
+    }
+
+    .form-btn {
+        margin-top: 10px;
     }
 }
 
@@ -311,6 +365,25 @@ a:hover {
 
     .contacts-info__title {
         font-size: 25px;
+    }
+
+    .contact-form__message {
+        max-height: 89px;
+        min-height: 89px;
+    }
+
+    .contact-form__item,
+    .contact-form__message {
+        width: 100%;
+    }
+    
+    .contact-form__item::placeholder,
+    .contact-form__message::placeholder {
+        font-size: 16px;
+    }
+    
+    .form-btn {
+        margin-top: 20px;
     }
 }
 
