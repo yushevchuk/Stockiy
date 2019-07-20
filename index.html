@@ -10,41 +10,52 @@
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <title>Stockiy</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <!-- Header Section -->
     <header class="header-bg">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-dark navbar-expand-lg d-flex">
-                    <a href="#" class="navbar-brand logo">ПП Олександр Стоцький </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggle" aria-expanded="false" aria-controls="navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="nav-toggle">
-                        <ul class="navigation-list navbar-nav">
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">Головна</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">Послуги</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">Наші вироби</a>
-                            </li>
-                            <li class="navigation-item">
-                                <a href="#" class="navigation-link">Контакти</a>
-                            </li>
-                        </ul>
-                    </div>                   
-                </nav> 
-            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg d-flex">
+                        <a href="#" class="navbar-brand logo">ПП Олександр Стоцький </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggle" aria-expanded="false" aria-controls="navbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="nav-toggle">
+                            <ul class="navigation-list navbar-nav align-items-center">
+                                <li class="navigation-item">
+                                    <h1 class="mobile-logo">ПП Олександр Стоцький </h1>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#" class="navigation-link">Головна</a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#" class="navigation-link">Послуги</a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#" class="navigation-link">Наші вироби</a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#" class="navigation-link">Контакти</a>
+                                </li>
+                            </ul>
+                        </div>                   
+                    </nav> 
+                </div>
+          </div>
         </div>
-        <div class="header-info">
-            <div class="container">
-                <div class="header-title d-flex justify-content-center align-items-center flex-column">
-                    <h2 class="header-title-text">Створи собі настрій!</h2>
-                    <h1 class="header-title-text">Відмінні меблі на кожен день!</h1>
+        <div class="row no-gutters">
+            <div class="col-md-12">
+                <div class="header-info">
+                    <div class="container">
+                        <div class="header-title d-flex justify-content-center align-items-center flex-column">
+                            <h2 class="header-title-text">Створи собі настрій!</h2>
+                            <h1 class="header-title-text">Відмінні меблі на кожен день!</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,9 +181,9 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="box-product">
+                        <div class="box-product kitchen-furniture">
                             <div class="product-img">
-                                <img src="img/main/products/furniture.jpg" alt="furniture" class="product-img__image img-fluid">
+                                <img src="img/main/products/furniture.jpg" alt="furniture" data-slick-target="kitchen-gallery" data-target="kitchen" class="product-img__image img-fluid">
                             </div>
                             <div class="product-info">
                                 <h2 class="product-info__title">Кухні</h2>
@@ -181,9 +192,9 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="box-product">
+                        <div class="box-product room-furniture">
                             <div class="product-img">
-                                <img src="img/main/products/furniture.jpg" alt="furniture" class="product-img__image img-fluid">
+                                <img src="img/main/products/furniture.jpg" alt="furniture" data-slick-target="room-gallery" data-target="room" class="product-img__image img-fluid">
                             </div>
                             <div class="product-info">
                                 <h2 class="product-info__title">Кімнатні меблі</h2>
@@ -194,9 +205,9 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="box-product mb-md-0">
+                        <div class="box-product mb-md-0 office-furniture">
                             <div class="product-img">
-                                <img src="img/main/products/furniture.jpg" alt="furniture" class="product-img__image img-fluid">
+                                <img src="img/main/products/furniture.jpg" alt="furniture" data-slick-target="office-gallery" data-target="office" class="product-img__image img-fluid">
                             </div>
                             <div class="product-info">
                                 <h2 class="product-info__title">Офісні меблі</h2>
@@ -205,9 +216,9 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="box-product mb-0">
+                        <div class="box-product mb-0 bar-furniture">
                             <div class="product-img">
-                                <img src="img/main/products/furniture.jpg" alt="furniture" class="product-img__image img-fluid">
+                                <img src="img/main/products/furniture.jpg" alt="furniture" data-slick-target="bar-gallery" data-target="bar" class="product-img__image img-fluid">
                             </div>
                             <div class="product-info">
                                 <h2 class="product-info__title">Барні стійки</h2>
@@ -307,7 +318,109 @@
         </section>
     </main>
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a class="footer-title" href="index.html">ПП Олександр Стоцький</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-nav d-flex flex-column align-items-center">
+                        <ul>
+                            <li class="navigation-item navigation-item--footer">
+                                <a href="#" class="navigation-link footer-link">Головна</a>
+                            </li>
+                            <li class="navigation-item navigation-item--footer">
+                                <a href="#" class="navigation-link footer-link">Послуги</a>
+                            </li>
+                            <li class="navigation-item navigation-item--footer">
+                                <a href="#" class="navigation-link footer-link">Наші вироби</a>
+                            </li>
+                            <li class="navigation-item navigation-item--footer">
+                                <a href="#" class="navigation-link footer-link">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-contacts d-flex flex-column align-items-center align-items-md-end">
+                        <address class="contacts-info contacts-info--footer">
+                            <div class="contacts-info__address contacts-info__address--footer">
+                                <p class="m-0">с. Обарів, Рівненська обл.</p>
+                            </div>
+                            <div class="contacts-info__tel contacts-info__tel--footer">
+                                <a class="footer-link" href="tel:+38098381841">(098) 381 84 17;</a>
+                                <a class="footer-link" href="tel:+380935027574">(093) 502 75 74</a>        
+                            </div>
+                            <div class="contacts-info__mail contacts-info__mail--footer">
+                                <a class="footer-link" href="mailto:stocki00@mail.ua">stocki00@mail.ua</a>
+                            </div>
+                        </address>
+                        <div class="design-by d-flex justify-content-center">
+                            <p class="design-by__text">Design by</p>
+                            <a class="design-by__link footer-link" href="https://www.behance.net/miniailo">Miniailo Ekaterina</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+    <!-- Gallery -->
+        <section class="modal-content">
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#kitchen">Кухні</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#room">Кімнатні меблі</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#office">Офісні меблі</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#bar">Барні стійки</a>
+                        </li>
+                </ul>
+                 <!-- Tab panes -->
+                <div>
+                    <div id="kitchen" class="container slick-container">
+                        <h3>Кухні</h3>
+                        <div class="kitchen-gallery">
+                            <img src="img/main/products/kitchen.jpg" alt="">
+                            <img src="img/main/products/furniture.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="room" class="container tab-pane slick-container">
+                        <h3>Кімнатні меблі</h3>
+                        <div class="room-gallery">
+                            <img src="img/main/products/furniture.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="office" class="container slick-container">
+                        <h3>Офісні меблі</h3>
+                        <div class="office-gallery">
+                            <img src="img/main/products/office.jpg" alt="">
+                            <img src="img/main/products/furniture.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="bar" class="container slick-container">
+                        <h3>Барні стійки</h3>
+                        <div class="bar-gallery">
+                            <img src="img/main/products/bar.jpg" alt="">
+                            <img src="img/main/products/furniture.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <a class="back-to-top" title="top">&uarr;</a>
     <script
   src="https://code.jquery.com/jquery-3.4.0.js"
@@ -316,6 +429,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/js.js"></script>
+    <!-- <script src="js/modal.js"></script> -->
 </body>
 </html>

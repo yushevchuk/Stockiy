@@ -36,16 +36,25 @@ a:hover {
 }
 
 .navbar {
-    height: 75px;
+    justify-content: flex-end;
 }
 
 .logo {
+    display: none;
+}
+
+.mobile-logo {
+    color: #ea8411;
+}
+
+.logo,
+.mobile-logo {
     font-family: "PhillippScript";
     font-size: 24px;
 }
 
 .navigation-item {
-    margin-left: 45px;
+    margin-bottom: 20px;
     font-size: 18px;
 }
 
@@ -80,7 +89,9 @@ a:hover {
 .services,
 .products,
 .contacts,
-.contact-us {
+.contact-us,
+.footer,
+.kitchens {
     padding: 50px 0 70px 0;
 }
 
@@ -301,6 +312,49 @@ a:hover {
     background-color: #fceddc;
 }
 
+/* FOOTER */
+.footer {
+    background-color: #050921;
+    color: #fff;
+}
+
+.footer-title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-title:hover {
+    border-color:#ea8411;
+}
+
+.navigation-item--footer {
+    margin: 0 0 15px 0;
+}
+
+.navigation-item--footer,
+.contacts-info--footer {
+    font-size: 12px;
+}
+
+.design-by {
+    font-size: 9px;
+}
+
+.design-by__text {
+    padding-right: 5px;
+}
+
+.design-by__link {
+    text-decoration: underline;
+}
+
+.contacts-info__address,
+.contacts-info__tel,
+.contacts-info__mail {
+    margin-bottom: 15px;
+}
+
 @media screen and (min-width: 540px)  {
     .header-title-text {
         font-size: 36px;
@@ -341,6 +395,19 @@ a:hover {
 @media screen and (min-width: 992px) {
     .header-title-text {
         font-size: 56px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .navigation-item {
+        margin-left: 45px;
+        margin-bottom: 0;
     }
 
     .advantages-box__icon {
@@ -384,6 +451,15 @@ a:hover {
     .form-btn {
         margin-top: 20px;
     }
+
+    .navigation-item--footer,
+    .contacts-info--footer {
+        font-size: 14px;
+    }
+
+    .design-by {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -415,4 +491,69 @@ a:hover {
   
   .back-to-top_show {
     display: block;
+  }
+
+  /* Modal */
+  
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-bottom: 40px;
+      border-radius: 3px;
+      background-color: #ea8411;
+  }
+
+  .modal-content img {
+      width: 600px;
+      height: 500px;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .slick-container {
+      display: none;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
   }
